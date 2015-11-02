@@ -34,7 +34,6 @@ class Instagram
 	{
 		$url = "https://api.instagram.com/v1/users/{$this->userId}/";
 		$url .= "?client_id=" . $this->clientId;
-		$data = json_decode($this->cUrl($url));
 		return $this->cUrl($url);
 	}
 
